@@ -4,9 +4,9 @@ scipy
 scikit-image
 Pillow
 pandas
-torch
-torchvision
+#torch
+#torchvision
 configargparse
 
 # for bridges:
-j2cli
+#j2cli

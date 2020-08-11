@@ -11,7 +11,7 @@ class SqueezeNetBinaryClassifier(nn.Module):
 
     def __init__(self, config):
         super().__init__()
-        self.num_classes = 1
+        self.num_classes = 2
         # get layers of baseline model, loaded with some pre-trained weights
         model = tv.models.squeezenet1_0()
         if config.load_pretrained_squeezenet_weights:

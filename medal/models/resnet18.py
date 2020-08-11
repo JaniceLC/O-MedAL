@@ -24,7 +24,7 @@ class Resnet18BinaryClassifier(nn.Module):
         self.resnet18_layers = nn.Sequential(
             OrderedDict(list(model.named_children())[:-1]))
         self.top_layers = nn.Sequential(
-            nn.Linear(512, 1),
+            nn.Linear(512, 2),
             nn.Sigmoid(),
         )
 

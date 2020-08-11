@@ -27,7 +27,7 @@ class InceptionV3BinaryClassifier(nn.Module):
         self.inception_layers = nn.Sequential(
             OrderedDict(list(model.named_children())[:-1]))
         self.top_layers = nn.Sequential(
-            nn.Linear(2048, 1),
+            nn.Linear(2048, 2),
             nn.Sigmoid(),
         )
 
